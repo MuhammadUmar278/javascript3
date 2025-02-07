@@ -1,0 +1,49 @@
+// Arithmetic operations
+let num1 = +prompt("Enter your number1");
+let opt = prompt("Enter operator (+, -, *, /)").trim();
+let num2 = +prompt("Enter your number2");
+
+if (opt === "+") {
+    console.log(num1 + num2);
+    alert(num1 + num2);
+}
+else if (opt === "-") {
+    console.log(num1 - num2);
+    alert(num1 - num2);
+}
+else if (opt === "*") {
+    console.log(num1 * num2);
+    alert(num1 * num2);
+}
+else if (opt === "/") {
+    if (num2 !== 0) {
+        console.log(num1 / num2);
+        alert(num1 / num2);
+    } else {
+        console.log("Error: Division by zero.");
+        alert("Error: Division by zero.");
+    }
+} else {
+    console.log("Error: Invalid operator, please check.");
+    alert("Error: Invalid operator, please check.");
+}
+
+// City welcome message
+let city = prompt("Enter your city name:").trim();
+
+if (city.toLowerCase() === "karachi") {
+    alert("Welcome to the city of lights");
+} else {
+    alert("Welcome to " + city);
+}
+
+// Gender greeting
+let gender = prompt("Enter your gender (male/female):").trim();
+
+if (gender.toLowerCase() === "male") {
+    alert("Good Morning Sir");
+} else if (gender.toLowerCase() === "female") {
+    alert("Good Morning Ma'am");
+} else {
+    alert("Invalid input");
+}
